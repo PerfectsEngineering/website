@@ -1,0 +1,26 @@
+language: node_js
+node_js:
+  - "10"
+
+before_install:
+  - cd .deploy_scripts
+  - pwd
+
+install:
+  - npm install
+
+script:
+  - pwd
+  - echo 'Doing nothing, because nothing to build duh!'
+
+deploy:
+  - provider: script
+    skip_cleanup: true
+    script: npm start 
+    on:
+      branch: master
+  - provider: script
+    skip_cleanup: true
+    script: CF_DNS_RECORD_ID=$DEV_CF_DNS_RECORD_ID npm start
+    on:
+      branch: develop
