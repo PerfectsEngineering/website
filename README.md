@@ -7,6 +7,8 @@ See designs for the website here: https://github.com/PerfectEngineering/designs/
 
 The website is actually a static website that can be launched directly by opening the index.html in browser. But if you want some of the website request features to work, you would need to run it with a server.
 
+For convenience, a makefile is include and you can run `make serve` and this would serve the website which can be see at `http://localhost:9898`.
+
 ## Contribution Guideline
 We very much encourage contribution to the codebase. Here is what to do to contribute
 
