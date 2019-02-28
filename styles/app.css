@@ -2,13 +2,16 @@
   -webkit-font-smoothing: antialiased !important;
 }
 body {
-  background: #ffffff;
   color: #000;
   height: 100vh;
   width: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+
+body.pe-light {
+  background: #ffffff;
   transition: background 0.2s ease-in;
 }
 
@@ -33,6 +36,7 @@ header {
   background: transparent;
   height: 120px;
   color: #021318;
+  padding: 0 20px;
 }
 
 .pe-logo img {
@@ -57,27 +61,24 @@ header {
   transform-origin: top right;
 }
 
+.pe-icons a {
+  line-height: 0;
+}
 svg.sun {
   display: none;
 }
 
 body.pe-dark svg.sun {
-  display: block!important;
+  display: block !important;
 }
 
 body.pe-dark svg.moon {
   display: none;
 }
 
-body.pe-dark svg:not(:last-child) path {
-  fill: #fff;
-}
-
-body.pe-dark svg:last-child path {
-  fill: #021318;
-}
-
-body.pe-dark svg:last-child rect {
+body.pe-dark svg.twitter path,
+body.pe-dark svg.youtube path,
+body.pe-dark svg.linkedin path {
   fill: #fff;
 }
 

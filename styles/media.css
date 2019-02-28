@@ -40,31 +40,23 @@
   }
 }
 
-@media only screen and (min-width: 0) and (max-width: 575px) {
-  body {
-    padding: 0 15px!important;
-  }
-}
-
-@media only screen and (min-width: 0) and (max-width: 575px) {
-  .pe-icons svg:not(:first-child) {
-    display: none;
-  }
-  .pe-icons .mode-toggle svg {
-    margin-right: 0;
-    height: 25px;
-    width: 25px;
-  }
+@media only screen and (max-width: 768px) {
   .pe-logo img {
     height: 70px;
   }
+  .pe-icons a:last-child svg {
+    margin-right: 0 !important;
+  }
 }
 
-@media only screen and (min-width: 576px) and (max-width: 768px) {
-  .pe-logo img {
-    height: 80px;
+@media only screen and (max-width: 575px) {
+  body {
+    padding: 0 15px!important;
   }
-  .pe-icons svg:not(:last-child) {
-    margin-right: 30px!important;
+  .pe-logo img {
+    height: 60px;
+  }
+  .pe-icons svg {
+    margin-right: 25px!important;
   }
 }
