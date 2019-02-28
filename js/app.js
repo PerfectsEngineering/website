@@ -1,9 +1,11 @@
 //Main website javascript code here
-document
-    .querySelector('.mode-toggle')
-    .addEventListener('click', function(event) {
-        event.preventDefault();
-    });
+document.addEventListener('DOMContentLoaded', function () {
+    document
+        .querySelector('.mode-toggle')
+        .addEventListener('click', function(event) {
+            event.preventDefault();
+        });
+})
 
 function toggleDarkLight() {
     const body = document.querySelector('body');
@@ -13,7 +15,9 @@ function toggleDarkLight() {
     localStorage.setItem('background', body.className);
 }
 
-if (localStorage.getItem('background') != null) {
-    document.body.className = localStorage.background;
-}
+document.addEventListener('DOMContentLoaded', function () {
+    if (localStorage.getItem('background') != null) {
+        document.body.className = localStorage.background;
+    }
+})
 
