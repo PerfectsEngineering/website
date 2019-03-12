@@ -21,7 +21,7 @@
 
 @media (min-width: 768px) {
   .pe-container {
-    max-width: 768px;
+    max-width: 85%;
     margin: auto;
   }
 }
@@ -35,28 +35,91 @@
 
 @media (min-width: 1200px) {
   .pe-container {
+    max-width: 85%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1440px) {
+  .pe-container {
     max-width: 1200px;
     margin: auto;
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  .pe-body {
+    height: auto;
+  }
+  .pe-body > div {
+    flex-direction: column-reverse;
+    padding: 80px 0 50px;
+  }
+  .pe-body > div > div {
+    width: 100% !important;
+  }
+  .pe-body .pe-illustration {
+    width: 60% !important;
+    margin: auto auto 30px;
+  }
+  .pe-cta-holder, body.pe-dark .pe-cta-holder {
+    width: 100%;
+    position: relative;
+    top: 0;
+    height: auto;
+    box-shadow: none;
+    padding: 40px 0;
+  }
+  .pe-cta-holder > div {
+    width: 47%;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  html, body {
+    font-size: 14px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
+  section {
+    padding: 20px 30px;
+  }
   .pe-logo img {
     height: 70px;
   }
   .pe-icons a:last-child svg {
     margin-right: 0 !important;
   }
+  .pe-cta {
+    height: auto;
+  }
+  .pe-body .pe-illustration {
+    width: 100% !important;
+    margin: auto auto 30px;
+  }
+  .pe-cta-holder {
+    flex-direction: column;
+    padding: 30px 0;
+    width: 80%;
+  }
+  .pe-cta-holder > div {
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 
 @media only screen and (max-width: 575px) {
-  body {
-    padding: 0 15px!important;
+  html, body {
+    font-size: 13px;
   }
   .pe-logo img {
     height: 60px;
   }
   .pe-icons svg {
     margin-right: 25px!important;
+  }
+  .pe-cta-holder {
+    width: 100%;
   }
 }
