@@ -21,3 +21,5 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 })
 
+// Set current year to footer
+document.getElementById("year").innerHTML = new Date().getFullYear();
