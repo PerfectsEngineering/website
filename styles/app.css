@@ -1,19 +1,37 @@
 * {
   -webkit-font-smoothing: antialiased !important;
 }
+
+html, body {
+  font-size: 16px;
+}
+
 body {
-  background: #ffffff;
   color: #000;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body.pe-light {
+  background: #ffffff;
+  color: #000;
   transition: background 0.2s ease-in;
 }
 
 body.pe-dark {
   background: #021318;
+  color: #ffffff;
   transition: background 0.2s ease-in;
 }
 
@@ -33,6 +51,14 @@ header {
   background: transparent;
   height: 120px;
   color: #021318;
+  padding: 0 20px;
+  background: #fff;
+  transition: background 0.2s ease-in;
+}
+
+body.pe-dark header {
+  background: #021318;
+  transition: background 0.2s ease-in;
 }
 
 .pe-logo img {
@@ -47,6 +73,10 @@ header {
   margin-right: 40px;
 }
 
+.pe-icons a:last-child svg {
+  margin-right: 0;
+}
+
 .mode-toggle {
   display: flex;
 }
@@ -57,28 +87,167 @@ header {
   transform-origin: top right;
 }
 
+.pe-icons a {
+  line-height: 0;
+}
 svg.sun {
   display: none;
 }
 
 body.pe-dark svg.sun {
-  display: block!important;
+  display: block !important;
 }
 
 body.pe-dark svg.moon {
   display: none;
 }
 
-body.pe-dark svg:not(:last-child) path {
+body.pe-dark svg.twitter path,
+body.pe-dark svg.youtube path,
+body.pe-dark svg.linkedin path {
   fill: #fff;
 }
 
-body.pe-dark svg:last-child path {
-  fill: #021318;
+.pe-body {
+  height: 70vh;
+  background: #fff;
+  transition: background 0.2s ease-in;
+}
+.pe-body > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-body.pe-dark svg:last-child rect {
-  fill: #fff;
+body.pe-dark .pe-body {
+  background: #021318;
+  transition: background 0.2s ease-in;
 }
 
+.pe-body > div > div:first-child {
+  width: 45%;
+}
 
+.pe-body > div > div:last-child {
+  width: 54%;
+  margin-left: auto
+}
+
+.pe-body h1 {
+  font-size: 4rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.pe-body p {
+  line-height: 2;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.pe-illustration img {
+  width: 100%;
+  height: auto;
+}
+
+.pe-cta {
+  background-color: rgba(231, 249, 253, 0.96);
+  height: 230px;
+  transition: background 0.2s ease-in;
+  position: relative;
+}
+
+body.pe-dark .pe-cta, body.pe-dark .pe-cta-holder {
+  background: #112126;
+  transition: background 0.2s ease-in;
+}
+
+.body.pe-dark .pe-cta-holder {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.09);
+}
+.pe-cta-holder {
+  height: auto;
+  border-radius: 20px;
+  position: absolute;
+  top: -30%;
+  left: 0;
+  right: 0;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 30px;
+  margin: auto;
+  background-color: rgba(231, 249, 253, 0.96);
+  transition: background 0.2s ease-in;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.08);
+}
+
+body.pe-dark .pe-cta-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.pe-cta-holder > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 45%;
+}
+
+.pe-cta-icon {
+  background: linear-gradient(41deg, #0FB6E4, #3EF4A4);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.pe-cta-icon svg {
+  height: 50px;
+  width: 50px;
+}
+
+.pe-cta-text a {
+  font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #021318;
+  margin-bottom: 10px;
+  display: block;
+}
+
+body.pe-dark .pe-cta-text a {
+  color: #fff;
+  transition: color 0.2s ease-in;
+}
+
+.pe-cta-text p {
+  line-height: 1.9;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+footer {
+  background-color: rgba(231, 249, 253, 0.96);
+  transition: background 0.2s ease-in;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+footer p {
+  margin: 0;
+}
+
+body.pe-dark footer {
+  background: #112126;
+  transition: background 0.2s ease-in;
+}
