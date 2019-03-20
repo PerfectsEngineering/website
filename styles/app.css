@@ -23,16 +23,38 @@ a, a:hover {
   text-decoration: none;
 }
 
+.pe-button {
+  height: 100%;
+  padding: 12px 25px;
+  background-color: #021318;
+  color: #fff;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #021318;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in;
+}
+
+.pe-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease-in;
+}
+
 body.pe-light {
   background: #ffffff;
   color: #000;
-  transition: background 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 
 body.pe-dark {
   background: #021318;
   color: #ffffff;
-  transition: background 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 
 .pe-container {
@@ -53,12 +75,12 @@ header {
   color: #021318;
   padding: 0 20px;
   background: #fff;
-  transition: background 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 
 body.pe-dark header {
   background: #021318;
-  transition: background 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 
 .pe-logo img {
@@ -111,7 +133,7 @@ body.pe-dark svg.linkedin path {
 .pe-body {
   height: 70vh;
   background: #fff;
-  transition: background 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 .pe-body > div {
   display: flex;
@@ -121,7 +143,7 @@ body.pe-dark svg.linkedin path {
 
 body.pe-dark .pe-body {
   background: #021318;
-  transition: background 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 
 .pe-body > div > div:first-child {
@@ -154,14 +176,14 @@ body.pe-dark .pe-body {
 
 .pe-cta {
   background-color: rgba(231, 249, 253, 0.96);
-  height: 230px;
-  transition: background 0.2s ease-in;
+  height: 200px;
+  transition: background-color 0.2s ease-in;
   position: relative;
 }
 
 body.pe-dark .pe-cta, body.pe-dark .pe-cta-holder {
   background: #112126;
-  transition: background 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
 }
 
 .body.pe-dark .pe-cta-holder {
@@ -174,14 +196,14 @@ body.pe-dark .pe-cta, body.pe-dark .pe-cta-holder {
   top: -30%;
   left: 0;
   right: 0;
-  width: 70%;
+  width: 68%;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 50px 30px;
   margin: auto;
   background-color: rgba(231, 249, 253, 0.96);
-  transition: background 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.08);
 }
 
@@ -238,16 +260,80 @@ body.pe-dark .pe-cta-text a {
 
 footer {
   background-color: rgba(231, 249, 253, 0.96);
-  transition: background 0.2s ease-in;
-  text-align: center;
+  transition: background-color 0.2s ease-in;
   padding-bottom: 30px;
+}
+
+footer .subscribe {
+  margin: auto auto 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .subscribe p {
+  margin-bottom: 20px;
+  opacity: 1;
+  font-size: 14px;
+}
+
+footer .subscribe  form {
+  display: flex;
+  justify-content: center;
+  width: 60%;
+}
+
+footer form div:first-child {
+  margin-right: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+footer form div:first-child span {
+  font-size: 0.8rem;
+  font-family: 'Montserrat', san-serif;
+  color: red;
+  opacity: 0;
+}
+
+footer .subscribe input {
+  height: 40px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  padding-left: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.error input {
+  border: 1px solid red !important;
+  transition: border 0.2s ease-in;
+}
+
+.error span {
+  opacity: 1 !important;
+  transition: opacity 0.2s ease-in;
+}
+
+footer .subscribe input:focus {
+  border: 1px solid rgba(2, 19, 24, 0.2);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in;
 }
 
 footer p {
   margin: 0;
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.7;
 }
 
 body.pe-dark footer {
   background: #112126;
-  transition: background 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
 }
