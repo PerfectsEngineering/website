@@ -297,7 +297,7 @@ footer form div:first-child span {
   opacity: 0;
 }
 
-footer .subscribe input {
+footer .subscribe input[type='email'] {
   height: 40px;
   width: 100%;
   outline: none;
@@ -310,17 +310,13 @@ footer .subscribe input {
   border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
-.error input {
+.error input[type='email'] {
   border: 1px solid red !important;
   transition: border 0.2s ease-in;
 }
 
-.error span {
-  opacity: 1 !important;
-  transition: opacity 0.2s ease-in;
-}
 
-footer .subscribe input:focus {
+footer .subscribe input[type='email']:focus {
   border: 1px solid rgba(2, 19, 24, 0.2);
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in;
