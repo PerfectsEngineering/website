@@ -68,10 +68,13 @@
     top: 0;
     height: auto;
     box-shadow: none;
-    padding: 40px 0;
+    padding: 60px 0;
   }
   .pe-cta-holder > div {
     width: 47%;
+  }
+  footer {
+    padding-top: 30px;
   }
 }
 
@@ -79,6 +82,17 @@
   html, body {
     font-size: 14px;
   }
+  footer {
+    padding-bottom: 30px;
+  }
+  footer > div {
+    flex-direction: column; 
+  }
+  footer .subscribe {
+    width: 70%;
+    margin-bottom: 50px;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -107,6 +121,9 @@
     width: 100%;
     margin-bottom: 40px;
   }
+  footer .subscribe {
+    width: 95%;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -121,5 +138,15 @@
   }
   .pe-cta-holder {
     width: 100%;
+  }
+  footer {
+    padding-bottom: 30px;
+  }
+  footer .subscribe form {
+    width: 100%;
+    flex-direction: column
+  }
+  footer .subscribe input {
+    margin-bottom: 15px;
   }
 }
