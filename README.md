@@ -1,7 +1,7 @@
 # Perfects.Engineering Website Code
 
-This is still work in progress, but
-See designs for the website here: https://github.com/PerfectEngineering/designs/website
+Website is hosted at [https://perfects.engineering](https://perfects.engineering).
+You can also see designs for the website here: https://github.com/PerfectEngineering/designs/website
 
 ## Setup
 

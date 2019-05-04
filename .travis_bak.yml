@@ -1,3 +1,4 @@
+# travis ci no more in use, switch to netlify but it was nice deploying to IPFS while it lasted
 language: node_js
 node_js:
   - "10"
