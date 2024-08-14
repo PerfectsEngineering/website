@@ -238,12 +238,13 @@ body.pe-dark .pe-cta-holder {
 }
 
 .pe-cta-text a {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 600;
+  font-weight: 900;
   color: #021318;
   margin-bottom: 10px;
   display: block;
+  text-decoration: underline;
 }
 
 body.pe-dark .pe-cta-text a {
